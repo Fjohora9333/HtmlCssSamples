@@ -1,0 +1,70 @@
+/* Stylesheet for weather website */
+
+body {
+    background-color: #213546;
+    background-image: url(media/satradar.jpg);
+    background-repeat: repeat-y;
+    background-position: 50% 0;
+}
+
+header, main, footer {
+    background-color: #78a;
+    border: 1px solid white;
+    width: 40em;
+    margin: 3em auto 3em auto;
+    padding: 0.5em;
+}
+
+header, footer {
+    text-align: center
+}
+
+header h1 {
+    font-family: cursive;
+    font-size: 350%;
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    border: 1px solid;
+    border-collapse: collapse;
+    background-color: white;
+    margin: 1em auto 1em auto;
+}
+
+th, td {
+    border: 1px solid black;
+}
+
+th {
+    background-color: #999;
+    font-size: 150%;
+}
+
+td {
+    border: 1px solid black;
+    padding: 0.5em;
+    margin: 0;
+    text-align: center;
+}
+
+hr { clear: both; }
+
+img { display: block; }
+
+dt { font-weight: bold; }
+
+/* Place location and current conditions table side-by-side */
+#conditions {
+    width: 19em;
+    float: right;
+}
+#location {
+    width: 18em;
+}
+
+/* Use for details in the current conditions table. */
+.left { text-align: left; border-right: 0px; }
+.right { text-align: right; border-left: 0px; }
+

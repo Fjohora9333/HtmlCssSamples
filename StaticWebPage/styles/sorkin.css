@@ -1,0 +1,80 @@
+/*the styles for the elements*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: yellow;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 650px;
+	margin:auto;
+    text-align: center;
+    border:4px double blue;
+    background: white;
+    text-align: center;
+    align-content: center;
+}
+img{
+    float: left;
+    padding-right: 1.5em;
+    padding-bottom: 1em;
+}
+/*the styles for the main element*/
+main{
+    padding: 2em;
+    text-align: left
+}
+main h1{
+    font-size: 150%;
+    color: blue;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    
+}
+main h2{
+    font-size: 125%;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+main h3{
+    font-size: 115%;
+    margin-bottom: 1em;
+}
+main p{
+    padding-bottom: 1em;
+}
+main blockquote{
+    font-style: italic;
+}
+
+main ul{
+    padding-bottom: 1em;
+    padding-left: 1em;
+    
+}
+main li{
+    padding-bottom: .5em;
+}
+.rightBlue{
+    text-align:right;
+    color: blue;
+    
+}
+.change{
+    font-style: normal;
+}
+/*the styles for the footer element*/
+footer{
+    border-top: 4px solid blue;
+    margin: 2em;
+    font-size: 90%;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 1em;
+}

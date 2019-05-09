@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="default.css">
+    <style>
+        #current
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Weather Wizard</h1>
+        <p><a href="#current">Current Conditions</a>
+        <a href="#forecast">Forecast</a>
+        <a href="#historical">Historica Data</a></p>
+    </header>
+    <main>
+        <table id="conditions">
+            <tr>
+                <th colspan="3">Current Conditions</th>
+            </tr>
+            <tr>
+                <td rowspan="2"><dt><img src="media/02.png"></dt><dt>5&deg;C</dt></td>
+                <td colspan="2">Dec 12,2018</td>
+            </tr>
+            <tr>
+                <td class="left"><dt>Temperature</dt> <dt>Humidity</dt> <dt>Wind</dt></td>
+                <td class="right"><dt>5&deg;C</dt><dt> 65% </dt><dt>SW 5Km/h</dt></td>
+            </tr>
+        </table>
+        <a id="current"></a><div id="location">
+            <h2>Waterloo</h2>
+            <form>
+                <select>
+                    <option>Waterloo</option>
+                    <option>Kitchener</option>
+                    <option>Cambridge</option>
+                </select>
+            </form>
+        </div>
+        <hr>
+        <table>
+            <tr>
+                <th colspan="5">Forecast-Overview</th>
+            </tr>
+            <tr>
+                <td>Mon</td>
+                <td>Tue</td>
+                <td>Wed</td>
+                <td>Thur</td>
+                <td>Fri</td>
+            </tr>
+            <tr>
+                <td><dt><img src="media/02.png"></dt><dt>6&deg;C</dt></td>
+                <td><dt><img src="media/06.png"></dt><dt>5&deg;C</dt></td>
+                <td><dt><img src="media/08.png"></dt><dt>-8&deg;C</dt></td>
+                <td><dt><img src="media/10.png"></dt><dt>-8&deg;C</dt></td>
+                <td><dt><img src="media/48.png"></dt><dt>4&deg;C</dt></td>
+            </tr>
+        </table>
+        <a id="forecast"></a><h2>Forecast-Detailed</h2>
+        <dt>Monday</dt>
+        <dd>Mainly sunny, high of -5&deg;C</dd>
+        <dt>Tuesday</dt>
+        <dd>A few clouds, increasing cloudness after midnight</dd>
+        <dt>Wednesday</dt>
+        <dd>Mainly cloudy, 30% chance of flirries in the evening</dd>
+        <dt>Thursday</dt>
+        <dd>Clouding with 60% chance if snow</dd>
+        <dt>Friday</dt>
+        <dd>Blizzard warning</dd>
+        <a id="historical"></a><h2>Historical Data</h2>
+        <p>Request a summary of historical weather data</p>
+        <hr>
+        <form>
+            <label>Year and season to retrive</label>
+            <select name="years">
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018" selected>2018</option>
+            </select>
+            <select name="seasons">
+                <option valu="Spring">Spring</option>
+                <option value="Summer">Summer</option>
+                <option value="Fall">Fall</option>
+                <option value="Winter" selected>Winter</option>
+            </select>
+            <fieldset>
+                <legend>Location</legend>
+                <input type="radio" name="location" id="location1" value="waterloo">
+                <label for="location1">Waterloo</label>
+                <br/>
+                <input type="radio" name="location" id="location2" value="kitckener">
+                <label for="location2">Kitckener</label>
+                <br/>
+                <input type="radio" name="location" id="location3" value="cambridge">
+                <label for="location3">Cambridge</label>
+            </fieldset>
+            <fieldset>
+                <legend>Readings</legend>
+                <input type="checkbox" name="reading1" id="reading1" value="temperature">
+                <label for="reading1">Temperature</label>
+                <br/>
+                <input type="checkbox" name="reading2" id="reading2" value="temperature">
+                <label for="reading2">Humidity</label>
+                <br/>
+                <input type="checkbox" name="reading3" id="reading3" value="WindSpeed">
+                <label for="reading3">Wind Speed</label>
+            </fieldset>
+            <button type="reset">Reset</button>
+            <button type="submit">Request</button>
+        </form>
+    </main>
+    <footer>
+        <p>Name:Fatima Tuj Jojora, StudentID:8619333</p>
+        <p>&copy;2018</p>
+    </footer>
+</body>
+</html>
